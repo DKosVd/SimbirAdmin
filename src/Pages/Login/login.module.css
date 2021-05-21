@@ -1,0 +1,96 @@
+.login {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 168px 0px 0px 0px;
+}
+
+.login__enter__wrapper {
+  min-width: 378px;
+  border-radius: 9px;
+  box-shadow: var(--shadow);
+  background-color: #ffffff;
+}
+
+.login__enter__wrapper__details {
+  padding: 22px 18px 20px 18px;
+}
+
+.login__enter__wrapper__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__enter__main__title {
+  min-height: 36px;
+  margin: 0px 0px 16px 0px;
+  text-align: center;
+}
+
+.login__enter__wrapper__logo {
+  min-height: 44px;
+  min-width: 208px;
+  margin: 0px 0px 16px 0px;
+  display: flex;
+}
+
+.login__enter__logo_img {
+  background: url(../../assets/images/LogoIcon.svg) no-repeat left;
+  flex: 1 1 26%;
+}
+
+.login__enter__logo_title {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  align-self: center;
+  font-size: 24px;
+  line-height: 28px;
+  flex: 1 1 74%;
+}
+
+.login__enter__main__title > h2 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.5px;
+  line-height: 20px;
+}
+
+.login__enter__form {
+  min-height: 114px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__enter__form__elem {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 16px 0px;
+}
+
+.login__enter__form__elem > label {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.5px;
+  line-height: 12px;
+}
+
+.login__enter__form__manipulation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__enter__form__link {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: var(--color-blue);
+  align-self: center;
+  font-size: 10.5px;
+  line-height: 12px;
+}
