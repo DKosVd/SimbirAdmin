@@ -1,0 +1,28 @@
+.notifications {
+  position: absolute;
+  z-index: 2;
+  top: 68px;
+  width: 100%;
+  min-height: 42px;
+  background-color: var(--main-color);
+}
+
+.notifications__body {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notifications__cancel {
+  color: #ffffff;
+}
+
+.notifications__txt {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+}
