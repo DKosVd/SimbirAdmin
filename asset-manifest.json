@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SimbirAdmin/static/css/main.b9b9ea69.chunk.css",
+    "main.js": "/SimbirAdmin/static/js/main.2a4010d1.chunk.js",
+    "main.js.map": "/SimbirAdmin/static/js/main.2a4010d1.chunk.js.map",
+    "runtime-main.js": "/SimbirAdmin/static/js/runtime-main.d8e3da44.js",
+    "runtime-main.js.map": "/SimbirAdmin/static/js/runtime-main.d8e3da44.js.map",
+    "static/js/2.dba31991.chunk.js": "/SimbirAdmin/static/js/2.dba31991.chunk.js",
+    "static/js/2.dba31991.chunk.js.map": "/SimbirAdmin/static/js/2.dba31991.chunk.js.map",
+    "index.html": "/SimbirAdmin/index.html",
+    "static/css/main.b9b9ea69.chunk.css.map": "/SimbirAdmin/static/css/main.b9b9ea69.chunk.css.map",
+    "static/js/2.dba31991.chunk.js.LICENSE.txt": "/SimbirAdmin/static/js/2.dba31991.chunk.js.LICENSE.txt",
+    "static/media/login.module.css": "/SimbirAdmin/static/media/LogoIcon.42a15795.svg",
+    "static/media/mainlayout.module.css": "/SimbirAdmin/static/media/car.681ac95f.png",
+    "static/media/header.module.css": "/SimbirAdmin/static/media/dropdown_icon.f0e60619.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8e3da44.js",
+    "static/js/2.dba31991.chunk.js",
+    "static/css/main.b9b9ea69.chunk.css",
+    "static/js/main.2a4010d1.chunk.js"
+  ]
+}
