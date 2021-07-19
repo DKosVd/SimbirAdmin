@@ -1,5 +1,6 @@
 import { Notifications } from "@styled-icons/ionicons-sharp/Notifications";
 import s from "./header.module.css";
+import { Search } from "@styled-icons/boxicons-solid/Search";
 
 const Header = () => {
   return (
@@ -7,7 +8,15 @@ const Header = () => {
       <div className="header__wrapper">
         <div className={s.header__search}>
           <div className={s.content__header__search}>
-            <input type="text" placeholder="Поиск..." defaultValue="" />
+            <div className={s.content__header__search__icon}>
+              <Search width={"14px"} height={"14px"} />
+            </div>
+            <input
+              type="text"
+              placeholder="Поиск..."
+              defaultValue=""
+              className={s.content__header__search__input}
+            />
           </div>
         </div>
         <div className={s.header__manage}>

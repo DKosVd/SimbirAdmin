@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { loginApi } from "../../services/api/auth";
-import { localStorage } from "../../services/localStorage/localStorage";
+import CookiesUtils from "../../services/cookies/cookies";
 import {
   ILoginFetch,
   LoginActionType,
@@ -19,8 +19,12 @@ function* login({ payload }: ILoginFetch) {
     yield put(SetStatusAction(ILoadingStatus.LOADING));
     const item: IResponseLogin = yield call(loginApi.login, payload);
     yield put(SetUserAction(item.user_id));
-    yield call(localStorage.setItem, "access_token", item["access_token"]);
-    yield call(localStorage.setItem, "refresh_token", item["refresh_token"]);
+    yield call(
+      [CookiesUtils, CookiesUtils.setAccessNRefresh],
+      item.access_token,
+      item.refresh_token,
+      item.expires_in
+    );
     yield put(SetStatusAction(ILoadingStatus.LOADED));
   } catch (err) {
     yield put(SetStatusAction(ILoadingStatus.ERROR));

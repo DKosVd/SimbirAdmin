@@ -2,6 +2,8 @@ import { applyMiddleware, compose, createStore } from "redux";
 import CreateSagaMiddleware from "redux-saga";
 import { rootReducer } from "./reducers";
 import { LoginState } from "./reducers/auth/contracts/state";
+import { CarState } from "./reducers/car/contracts/state";
+import { OrderState } from "./reducers/order/contracts/state";
 import { UserState } from "./reducers/user/contracts/state";
 import rootSaga from "./sagas";
 
@@ -16,6 +18,8 @@ const saga = CreateSagaMiddleware();
 export interface RootState {
   auth: LoginState;
   user: UserState;
+  order: OrderState;
+  car: CarState;
 }
 
 const composeEnhancers =

@@ -1,0 +1,129 @@
+.orders {
+  padding: 14px 20px 40px 20px;
+}
+
+.orders__elem {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orders__elem__main {
+  display: flex;
+}
+
+.orders__elem__main__img {
+  margin: 0px 16px 0px 0px;
+}
+
+.orders__elem__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 224px;
+  min-width: 224px;
+}
+
+.orders__elem__info__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #889098;
+  margin: 0px 0px 6px 0px;
+}
+
+.orders__elem__dlc {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders__elem__price {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--main-black);
+  flex: 0 1 10%;
+}
+
+.orders__elem__manage {
+}
+
+.orders__elem__panel {
+  min-width: 214px;
+  display: flex;
+}
+
+.orders__elem__panel > span {
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5a6169;
+  min-height: 24px;
+  min-width: 70px;
+  border: 1px solid var(--color-border);
+}
+
+.orders__elem__panel > span:hover {
+  cursor: pointer;
+  background-color: var(--color-hover);
+}
+
+.orders__elem__panel__ok {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.orders__elem__panel__edit {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.orders__elem__dlc__container {
+  display: flex;
+}
+
+.orders__elem__dlc__container__label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0px 0px 8px 0px;
+  color: var(--color-gray);
+}
+
+.orders__elem__dlc__container__active {
+  color: var(--main-black);
+}
+
+.orders__elem__panel__ok_img {
+  width: 10px;
+  height: 10px;
+  background: url(../../../../assets/images/ok.svg) no-repeat left;
+}
+
+.orders__elem__panel__cancel_img {
+  width: 10px;
+  height: 10px;
+  background: url(../../../../assets/images/cancel.svg) no-repeat left;
+}
+
+.orders__elem__panel__edit_img {
+  width: 10px;
+  height: 10px;
+  background: url(../../../../assets/images/edit.svg) no-repeat center;
+}
+
+@media (max-width: 1023.88px) {
+  .orders__elem {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}

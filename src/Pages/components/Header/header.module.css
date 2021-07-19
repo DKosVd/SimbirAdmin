@@ -16,6 +16,10 @@
   display: flex;
 }
 
+.header__manage:hover {
+  cursor: pointer;
+}
+
 .header__notification__quantity {
   position: absolute;
   display: flex;
@@ -71,5 +75,21 @@
 .content__header__menu__dropdown {
   width: 10px;
   height: 10px;
-  background: url(../../../assets/images/dropdown_icon.svg) no-repeat;
+  background: url(../../../assets/images/dropdown_icon.svg) no-repeat center;
+}
+
+.content__header__search {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+}
+
+.content__header__search__input {
+  border: 0px;
+  min-width: 95%;
+  align-self: flex-end;
+}
+
+.content__header__search__icon {
+  margin: 0px 8px 0px 0px;
 }

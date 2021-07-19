@@ -1,0 +1,41 @@
+.entity {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 0px 1px 0px rgba(90, 97, 105, 0.11),
+    0px 2px 4px rgba(90, 97, 105, 0.12), 0px 5px 5px rgba(90, 97, 105, 0.06),
+    0px 3.5px 35px rgba(90, 97, 105, 0.1);
+}
+
+.entity__tr {
+  height: 36px;
+}
+
+.entity__table {
+  padding: 14px 20px 40px 20px;
+}
+
+.entity__tr > th {
+  text-align: left;
+}
+
+.entity__filter__btn {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  padding: 14px 20px 0px 20px;
+}
+
+.entity__filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.entity__filter__elem {
+  margin: 0px 16px 0px 0px;
+}
+
+.entity__with__line {
+  box-shadow: 0px -0.5px 0px #e0e2e8, 0px 0.5px 0px #e0e2e8;
+}

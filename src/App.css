@@ -12,15 +12,25 @@ h6 {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 :root {
   --back-color: rgba(245, 246, 248, 1);
   --color-blue: #007bff;
+  --color-gray: #999999;
   --color-border: #becad6;
   --color-disabled: #e9ecef;
   --color-error: #c4183c;
   --color-hover: #fbfbfb;
   --color-btn-red: #cb3656;
   --main-color: #0ec261;
+  --gray-bold: rgba(153, 153, 153, 1);
   --color-text: #3d5170;
   --main-black: #121212;
   --color-txt: #818ea3;
@@ -50,6 +60,8 @@ a {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   opacity: 0;
+  max-width: 4px;
+  max-height: 4px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -210,4 +222,79 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  flex-grow: 0;
+  border: 1px solid var(--gray-bold);
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox:hover + label {
+  cursor: pointer;
+}
+
+.custom-checkbox:checked + label::before {
+  content: "\2714";
+  font-size: 8px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  line-height: 12px;
+  color: #ffffff;
+  background-color: var(--color-blue);
+}
+
+.custom-checkbox__green {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox__green + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox__green + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 0.5px solid var(--gray-bold);
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox__green:hover + label {
+  cursor: pointer;
+}
+
+.custom-checkbox__green:checked + label::before {
+  content: "\2714";
+  font-size: 14px;
+  line-height: 14px;
+  border-color: var(--main-color);
 }

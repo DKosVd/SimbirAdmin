@@ -1,0 +1,11 @@
+.entity__table {
+  padding: 14px 20px 40px 20px;
+}
+
+.entity__tr > th {
+  text-align: left;
+}
+
+.entity__tr {
+  height: 36px;
+}
